@@ -1,0 +1,24 @@
+nproc Example
+
+The nproc command shows the number of processing units available:
+# nproc
+
+Sample outputs:
+
+8
+lscpu Command
+
+lscpu gathers CPU architecture information form /proc/cpuinfon in human-read-able format:
+# lscpu
+
+/proc/cpuinfo
+
+The /proc/cpuinfo and sysfs stores info about your CPU architecture ike number of CPUs, threads, cores, sockets, NUMA nodes, information about CPU caches, CPU family, model, bogoMIPS, yte order and much more:
+# less /proc/cpuinfo
+
+You can also press ‘1’ when you run ‘top’ to get core info.
+
+
+Find all empty files and delete it on a Linux/UNIX/OSX
+
+find . -type f -empty -print0 | xargs -0 -{} rm -v "{}"
